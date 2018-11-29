@@ -1,0 +1,29 @@
+{
+  "customerName": { "title": "Mr", "firstName": "Joe", "lastName": "Bloggs" },
+  "customerPersonalDetails": {
+    "nationalInsuranceNumber": "JT534675C",
+    "dateOfBirth": "1980-01-01",
+    "emailAddress": "test@wealthwizards.com",
+    "phoneNumber": "01214333546"
+  },
+  "address": {
+    "line1": "132 Linden Road",
+    "line2": "Bournville",
+    "town": "Birmingham",
+    "postCode": "B30 1LB"
+  },
+  "wrapper": "STOCKS_AND_SHARES_ISA",
+  "fundInvestments": [
+    {
+      "regularPaymentAmount": 100,
+      "lumpsumAmount": 2000,
+      "isin": "GB00B4PM4C84",
+      "collectionStartDayType": "SPECIFIC_DAY",
+      "collectionStartDay": 1,
+      "collectionFrequency": "MONTHLY"
+    }
+  ],
+  "redirectUrl": "https://athena.wealthwizards.io/investment/dashboard",
+  "notifyPaymentSuccessUrl":
+    "https://athena.wealthwizards.io/investment-fulfillment/v1/solution/12345/paid"
+}
