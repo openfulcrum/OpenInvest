@@ -38,16 +38,13 @@
 
 ### Routes
 
-### *switch and redirect auth*
-### http://localhost:8080/switch-redirect-auth/graphiql
-
-### *isa apply unauth*
 ### http://localhost:8080/isa-apply-unauth/graphiql
 
 ## Use
 
 ### The graphql mock server start on default port 8080.
 
+### Navigate to http://localhost:8080/isa-apply-unauth/graphiql
 ### The following queries can be performed for isa-apply-unauth
 
 ### RetrieveAllFunds
