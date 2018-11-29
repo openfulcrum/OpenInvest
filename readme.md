@@ -53,7 +53,7 @@ To test the API, please install the Mock API server.
 ### The following queries can be performed for isa-apply-unauth
 
 ```javascript
-	// retrieveAllFunds
+// retrieveAllFunds
 {
 	personalInvestmentFunds(audience: EXISTING_CUSTOMER, personalInvestmentOrderWrapper: STOCKS_AND_SHARES_ISA) 
 	{
@@ -67,13 +67,13 @@ To test the API, please install the Mock API server.
 ```
 
 ```javascript
-	// retrieveFundsByIsin
-	{
-	   personalInvestmentFund(isin: "isin-2") 
-	   {
-		  isin name ongoingCharge underlyingYield fundSize numberOfHoldings fundFactsheetURL kiidURL assetType managementStyle region unitType
-	   }
-	}
+// retrieveFundsByIsin
+{
+   personalInvestmentFund(isin: "isin-2") 
+   {
+	  isin name ongoingCharge underlyingYield fundSize numberOfHoldings fundFactsheetURL kiidURL assetType managementStyle region unitType
+   }
+}
 ```
 
 ## Contributors
