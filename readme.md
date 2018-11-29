@@ -54,16 +54,16 @@ To test the API, please install the Mock API server.
 
 ```javascript
 	// retrieveAllFunds
+{
+	personalInvestmentFunds(audience: EXISTING_CUSTOMER, personalInvestmentOrderWrapper: STOCKS_AND_SHARES_ISA) 
 	{
-		personalInvestmentFunds(audience: EXISTING_CUSTOMER, personalInvestmentOrderWrapper: STOCKS_AND_SHARES_ISA) 
-		{
-			isin
-			name
-			ongoingCharge
-			trackTheMarket
-			region
-		}
+		isin
+		name
+		ongoingCharge
+		trackTheMarket
+		region
 	}
+}
 ```
 
 ```javascript
