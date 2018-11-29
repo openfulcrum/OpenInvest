@@ -1,4 +1,11 @@
+# OpenInvest
+
+The open source investment API
+
+We are starting with OpenInvest and specifically buying an ISA. Soon other investment products will be added. If you have a business use for OpenInvest, please [fill out our survey](http://survey.openfulcrum.com) because we are always on the look-out for expanding the partner ecosystem around OpenFulcrum and co-creating new solutions.
+
 # Mock API for GraphQL Schema
+To test the API, please install the Mock API server.
 
 [![Build Status](https://travis-ci.org/2fd/graphdoc.svg?branch=master)](https://travis-ci.org/2fd/graphdoc)
 ![npm (scoped)](https://img.shields.io/npm/v/@2fd/graphdoc.svg?style=flat-square)
