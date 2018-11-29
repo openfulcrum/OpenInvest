@@ -51,7 +51,7 @@
 ### The following queries can be performed for isa-apply-unauth
 
 ### RetrieveAllFunds
-```json
+```javascript
     {
     personalInvestmentFunds(audience: EXISTING_CUSTOMER, personalInvestmentOrderWrapper: STOCKS_AND_SHARES_ISA) 
     {
@@ -65,16 +65,15 @@
 ```
 
 ### RetrieveFundsByIsin
-```json
+```javascript
 {
    personalInvestmentFund(isin: "isin-2") 
    {
-      isin name ongoingCharge underlyingYield fundSize numberOfHoldings fundFactsheetURL kiidURL 
-      assetType managementStyle region unitType
+      isin name ongoingCharge underlyingYield fundSize numberOfHoldings fundFactsheetURL kiidURL assetType managementStyle region unitType
    }
 }
 ```
 
 ## Contributors
 
-- [<img src="https://avatars1.githubusercontent.com/u/2903325?v=4" width="40"> dnalborczyk](https://github.com/vijkumar8765)
+- [<img src="https://avatars1.githubusercontent.com/u/2903325?v=4" width="40"> vijkumar8765](https://github.com/vijkumar8765)
