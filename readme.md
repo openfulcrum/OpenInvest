@@ -1,22 +1,80 @@
-# es-mock-api
+# Mock API for GraphQL Schema
 
-Mock API for emerald-sapphire project.
+[![Build Status](https://travis-ci.org/2fd/graphdoc.svg?branch=master)](https://travis-ci.org/2fd/graphdoc)
+![npm (scoped)](https://img.shields.io/npm/v/@2fd/graphdoc.svg?style=flat-square)
+![GitHub tag](https://img.shields.io/github/tag/2fd/graphdoc.svg?style=flat-square)
 
-## Notes
+* [edit](#edit)
+* [install](#install)
+* [Routes](#routes)
+* [use](#use)
+* [contributors](#contributors)
 
-`workplacePensionCustomerDetails` has poicyNumber added to the arguments
-in order to return a different persona, This wil be cookie driven in the real api
+## Edit
 
-## Installation and running 
+### Edit your `package.json`
 
-`yarn`
+#### For Windows
 
-`yarn start`
+```javascript
+    "build": "rm -rf dist/ && \"./node_modules/.bin/babel\" \"./\" --out-dir dist/ --ignore \"./node_modules,./.babelrc,./package.json,./npm-debug.log\" --copy-files",
+```
+
+#### For Linux
+
+```javascript
+    "build": "rm -rf dist/ && ./node_modules/.bin/babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+```
+
+## Install
+
+```bash
+    npm install
+```
+
+```bash
+    npm start
+```
 
 ### Routes
 
-*switch and redirect auth*
-http://localhost:8080/switch-redirect-auth/graphiql
+### *switch and redirect auth*
+### http://localhost:8080/switch-redirect-auth/graphiql
 
-*isa apply unauth*
-http://localhost:8080/isa-apply-unauth/graphiql
+### *isa apply unauth*
+### http://localhost:8080/isa-apply-unauth/graphiql
+
+## Use
+
+### The graphql mock server start on default port 8080.
+
+### The following queries can be performed for isa-apply-unauth
+
+### RetrieveAllFunds
+```json
+    {
+    personalInvestmentFunds(audience: EXISTING_CUSTOMER, personalInvestmentOrderWrapper: STOCKS_AND_SHARES_ISA) 
+    {
+        isin
+        name
+        ongoingCharge
+        trackTheMarket
+        region
+    }
+}
+```
+
+### RetrieveFundsByIsin
+```json
+{
+   personalInvestmentFund(isin: "isin-2") 
+   {
+      isin name ongoingCharge underlyingYield fundSize numberOfHoldings fundFactsheetURL kiidURL 
+      assetType managementStyle region unitType
+   }
+}
+```
+
+## Contributors
+
+- [<img src="https://avatars1.githubusercontent.com/u/2903325?v=4" width="40"> dnalborczyk](https://github.com/vijkumar8765)
