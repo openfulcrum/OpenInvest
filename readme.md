@@ -35,6 +35,10 @@
     npm start
 ```
 
+### Routes
+
+### http://localhost:8080/isa-apply-unauth/graphiql
+
 ## Use
 
 ### The graphql mock server start on default port 8080.
