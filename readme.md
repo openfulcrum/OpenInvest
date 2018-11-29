@@ -35,35 +35,38 @@
     npm start
 ```
 
-## Use
+## Routes
 
-### The graphql mock server start on default port 8080.
+### http://localhost:8080/isa-apply-unauth/graphiql
+### http://localhost:8080/switch-redirect-auth/graphiql
+
+## Use
 
 ### Navigate to http://localhost:8080/isa-apply-unauth/graphiql
 ### The following queries can be performed for isa-apply-unauth
 
 ```javascript
 	// retrieveAllFunds
-    {
-    personalInvestmentFunds(audience: EXISTING_CUSTOMER, personalInvestmentOrderWrapper: STOCKS_AND_SHARES_ISA) 
-    {
-        isin
-        name
-        ongoingCharge
-        trackTheMarket
-        region
-    }
-}
+	{
+		personalInvestmentFunds(audience: EXISTING_CUSTOMER, personalInvestmentOrderWrapper: STOCKS_AND_SHARES_ISA) 
+		{
+			isin
+			name
+			ongoingCharge
+			trackTheMarket
+			region
+		}
+	}
 ```
 
 ```javascript
 	// retrieveFundsByIsin
-{
-   personalInvestmentFund(isin: "isin-2") 
-   {
-      isin name ongoingCharge underlyingYield fundSize numberOfHoldings fundFactsheetURL kiidURL assetType managementStyle region unitType
-   }
-}
+	{
+	   personalInvestmentFund(isin: "isin-2") 
+	   {
+		  isin name ongoingCharge underlyingYield fundSize numberOfHoldings fundFactsheetURL kiidURL assetType managementStyle region unitType
+	   }
+	}
 ```
 
 ## Contributors
