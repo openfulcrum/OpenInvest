@@ -11,10 +11,22 @@ To test the API, please install the Mock API server.
 ![npm (scoped)](https://img.shields.io/npm/v/@2fd/graphdoc.svg?style=flat-square)
 ![GitHub tag](https://img.shields.io/github/tag/2fd/graphdoc.svg?style=flat-square)
 
+* [Docker] (#docker)
 * [edit](#edit)
 * [install](#install)
 * [use](#use)
 * [contributors](#contributors)
+
+## Docker
+To run OpenInvest just execute:
+docker run -p 8080:8080 -d openfulcrum/openinvest
+
+See [use](#use) on how to use the APIs.
+
+If you want to build your own Docker image locally:
+git clone https://github.com/openfulcrum/OpenInvest.git
+cd OpenInvest
+docker build -t openinvest:latest .
 
 ## Edit
 
