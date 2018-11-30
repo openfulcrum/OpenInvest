@@ -19,13 +19,17 @@ To test the API, please install the Mock API server.
 
 ## Docker
 To run OpenInvest just execute:
+
 docker run -p 8080:8080 -d openfulcrum/openinvest
 
 See [use](#use) on how to use the APIs.
 
 If you want to build your own Docker image locally:
+
 git clone https://github.com/openfulcrum/OpenInvest.git
+
 cd OpenInvest
+
 docker build -t openinvest:latest .
 
 ## Edit
