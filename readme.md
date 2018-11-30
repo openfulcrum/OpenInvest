@@ -18,6 +18,8 @@ To test the API, please install the Mock API server.
 
 ## Edit
 
+git clone https://github.com/openfulcrum/OpenInvest.git
+
 ### Edit your `package.json`
 
 #### For Windows

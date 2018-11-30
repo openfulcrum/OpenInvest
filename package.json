@@ -29,7 +29,7 @@
     "babel-preset-es2015": "^6.24.1"
   },
   "graphdoc": {
-	"endpoint": "http://localhost:8080/isa-apply-unauth/graphql",
-	"output": "./doc/schema"
+    "endpoint": "http://localhost:8080/isa-apply-unauth/graphql",
+    "output": "./doc/schema"
   }
 }
