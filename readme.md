@@ -11,7 +11,7 @@ To test the API, please install the Mock API server.
 ![npm (scoped)](https://img.shields.io/npm/v/@2fd/graphdoc.svg?style=flat-square)
 ![GitHub tag](https://img.shields.io/github/tag/2fd/graphdoc.svg?style=flat-square)
 
-* [Docker] (#docker)
+* [Docker](#docker)
 * [edit](#edit)
 * [install](#install)
 * [use](#use)
